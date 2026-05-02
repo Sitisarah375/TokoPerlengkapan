@@ -1,0 +1,33 @@
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+.product-card {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.product-img {
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.product-img:hover {
+    transform: scale(1.03);
+}
+
+.badge-kategori {
+    background-color: #e9ecff;
+    color: #3852B4;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+}
