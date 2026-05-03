@@ -86,7 +86,7 @@
                         <td>{{$item->tokoID}}</td>
                         <td>{{$item->kategori}}</td>
                         <td class="data title">{{$item['nama_produk']}}</td>
-                        <td class="data title">{{$item['harga']}}</td>
+                        <td class="data title">{{ number_format($item->harga) }}</td>
                         <td class="data title">{{$item['deskripsi']}}</td>
                         <td>
                             <img width="100px" src="/img/{{ $item['image'] }}" alt="">
