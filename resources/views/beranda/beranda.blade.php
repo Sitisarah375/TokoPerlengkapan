@@ -25,7 +25,7 @@
     </nav>
 
     <div class="container">
-        <nav class="nav">
+        <nav class="nav flex-wrap">
             <a class="nav-link active" href="#">Beranda</a>
             <a class="nav-link" href="#produk">Produk</a>
         </nav>
@@ -44,13 +44,15 @@
                     <img src="{{asset('assets/img/2.jpg')}}" class="d-block w-100" alt="...">
                     <div class="carousel-caption text-start"
                         style="top:50%; transform:translateY(-50%); bottom:auto; font-family:'Poppins', sans-serif;">
-                        <h1 class="d-flex">
+                        <h1 class="d-flex fs-4 fs-md-1">
                             Siap Main Hari Ini?
                         </h1>
-                        <p>Temukan berbagai perlengkapan tenis dan padel berkualitas <br> untuk menunjang performamu di
+                        <p class="small">
+                            Temukan berbagai perlengkapan tenis dan padel berkualitas <br> untuk menunjang performamu di
                             setiap permainan</p>
-                        <a href="#tentang"> <button class="btn rounded" style="background-color: #3852B4; color: white;">
-                            Selengkapnya <i class="bi bi-arrow-right ms-2"></i></button></a>
+                        <a href="#tentang"> <button class="btn btn-sm rounded"
+                                style="background-color: #3852B4; color: white;">
+                                Selengkapnya <i class="bi bi-arrow-right ms-2"></i></button></a>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -73,14 +75,13 @@
 
     <div class="container mt-5" id="tentang">
 
-        <div class="text-center p-4 rounded-4"
-            style="max-width:900px; margin:auto; background: linear-gradient(135deg, #3852B4, #6f86ff); color:white;">
+        <div class="text-center p-3 rounded-4 text-white"
+            style="max-width:900px; margin:auto; background: linear-gradient(135deg, #3852B4, #6f86ff);">
 
-            <h5 style="letter-spacing:2px;">SPORT STORE</h5>
+            <h6>SPORT STORE</h6>
+            <h4 class="fw-bold">Court.Co</h4>
 
-            <h2 class="mt-2 fw-bold">Court.Co</h2>
-
-            <p class="mt-3" style="opacity:0.9;">
+            <p class="small">
                 Court.Co adalah tempat terbaik untuk menemukan perlengkapan tenis dan padel berkualitas.
                 Kami hadir untuk mendukung setiap langkah permainanmu — dari latihan hingga pertandingan.
             </p>
@@ -113,7 +114,7 @@
                 <div class="card h-100">
                     @foreach($data as $item)
                     <a href="p1.html">
-                        <img src="/img/{{ $item['image'] }}" class="card-img-top">
+                        <img src="/img/{{ $item['image'] }}" class="card-img-top img-fluid">
                     </a>
                     <div class="card-body">
                         <h5 style="color: #3852B4;" class="card-title">{{ $item['nama_produk'] }}</h5>

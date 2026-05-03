@@ -50,8 +50,16 @@
                 <i class="fas fa-lock"></i>
             </div>
 
-            <div class=" mt-5 d-flex justify-content-between align-items-center">
-                <button type="submit" class="go-button"><i class="fas fa-long-arrow-right"></i></button>
+            <div class="mt-5 d-flex justify-content-between align-items-center">
+
+                <a href="/" class="btn btn-primary btn-sm">
+                    ← Kembali
+                </a>
+
+                <button type="submit" class="go-button">
+                    <i class="fas fa-long-arrow-right"></i>
+                </button>
+
             </div>
         </form>
     </div>
