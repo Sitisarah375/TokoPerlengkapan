@@ -4,6 +4,11 @@
     border-radius: 20px;
 }
 
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
 body {
     background-color: #f8f9fa;
 }

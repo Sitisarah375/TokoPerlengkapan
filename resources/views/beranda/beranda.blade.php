@@ -114,7 +114,7 @@
             <div class="col-6 col-sm-6 col-md-4 col-lg-3">
                 <div class="card h-100">
                     <a href="#">
-                        <img src="/img/{{ $item->image }}" class="card-img-top img-fluid">
+                        <img src="/img/{{ $item->image }}" class="card-img-top">
                     </a>
 
                     <div class="card-body">
